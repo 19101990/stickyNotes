@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box; /* when we add any border or padding to an element it won't affect it's width */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(20, 214, 183);
+  background: radial-gradient(
+    circle,
+    rgba(20, 214, 183, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  margin: 0;
+  padding-bottom: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.add {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.add i {
+  margin-right: 0.3em;
+}
+
+.add:hover {
+  background: rgb(18, 177, 150);
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools {
+  background-color: #222;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 5px;
+  outline: none;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.note .main {
+  padding: 20px;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
